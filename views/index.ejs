@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title></title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -11,25 +11,66 @@
         <div class="logo">
             <img src="/images/logo.jpeg" alt="School Logo">
         </div>
-        <h1>Welcome to Our School</h1>
+        <h1 style="color: antiquewhite;">Welcome to Our Institution</h1>
         <nav>
             <a href="/">Home</a>
             <a href="/about">About Us</a>
             <a href="/contact">Contact</a>
         </nav>
+
+        <style>/* Logo image responsiveness */
+            header .logo img {
+                position:relative;
+                top: 0px;
+                left: 0px;
+                width: 145px; /* default size */
+                height: 160px;
+            }
+            
+            @media (max-width: 768px) {
+                header .logo img {
+                    width: 120px;
+                    height: 140px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                header .logo img {
+                    width: 90px;
+                    height: 80px;
+                }
+            }
+            </style>
     </header>
 
     <section class="intro">
-        <h2>About Our School</h2>
+        <h2 style="color:#2172b4">About Us</h2>
         <p>We are a premier institution providing quality education to students across various disciplines.</p>
+        <h2 style="color:#2172b4">Evening Coaching</h2>
+        <p>Evening classes are available. We provide you with the best of the skill based courses along with the Certifications. <br> Register yourself and become a Skilled Professional.</p>
+
     </section>
 
     <section class="gallery">
         <div class="gallery-item gallery-left">
             <img src="/images/school.jpeg" alt="School Front Photo">
             <div class="gallery-text">
-                <h3>Our School Building</h3>
+                <h3>Campus Building</h3>
                 <p>A stunning campus that provides a welcoming and inspiring environment for students.</p>
+            </div>
+        </div>
+        <div class="gallery-item gallery-right">
+            <div class="gallery-text">
+                <h3>Digital Marketing Course</h3>
+                <p>Our curriculum integrates practical, hands-on learning with traditional coursework.</p>
+            </div>
+            <img src="/images/digital.png" alt="Course Image 3">
+        </div>
+        <div class="gallery-item gallery-left">
+            <img src="/images/logic.jpeg" alt="Course Image 2">
+            <div class="gallery-text">
+                <h3>Modern Classrooms</h3>
+                <p>State-of-the-art classrooms equipped with the latest technology for interactive learning.</p>
             </div>
         </div>
         <div class="gallery-item gallery-right">
@@ -39,24 +80,12 @@
             </div>
             <img src="/images/english.jpeg" alt="Course Image 1">
         </div>
-        <div class="gallery-item gallery-left">
-            <img src="/images/logic.jpeg" alt="Course Image 2">
-            <div class="gallery-text">
-                <h3>Modern Classrooms</h3>
-                <p>State-of-the-art classrooms equipped with the latest technology for interactive learning.</p>
-            </div>
-        </div>
-        <!-- <div class="gallery-item gallery-right">
-            <div class="gallery-text">
-                <h3>Hands-on Learning</h3>
-                <p>Our curriculum integrates practical, hands-on learning with traditional coursework.</p>
-            </div>
-            <img src="/images/school-course3.jpg" alt="Course Image 3">
-        </div> -->
+        
+        
     </section>
 
     <footer>
-        <p>&copy; 2024 Our School. All Rights Reserved.</p>
+        <p>&copy; 2024 Inspire College. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

@@ -3,26 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title></title>
     <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .about-us-section {
+            padding: 60px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2 {
+            color: #1A4645;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .mission-vision {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .mission, .vision {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .values ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .values li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        .team {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .team p {
+            font-size: 1.2em;
+        }
+
+        header .logo img {
+                position:relative;
+                top: 0px;
+                left: 0px;
+                width: 145px; /* default size */
+                height: 160px;
+            }
+            
+            @media (max-width: 768px) {
+                header .logo img {
+                    width: 120px;
+                    height: 140px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                header .logo img {
+                    width: 90px;
+                    height: 80px;
+                }
+            }
+        </style>
 </head>
 <body>
-    <header>
-        <h1>About Us</h1>
+     <header>
+        <div class="logo">
+            <img src="/images/logo.jpeg" alt="School Logo">
+        </div>
+        <!-- <h1>About Us</h1> -->
+        <h1 style="color: antiquewhite;">About Us</h1>
         <nav>
             <a href="/">Home</a>
             <a href="/about">About Us</a>
             <a href="/contact">Contact</a>
         </nav>
     </header>
-    <section>
+
+    <section class="about-us-section">
+        <div class="container">
+           
+            <p class="intro">Welcome to Inspire Group of Colleges, where innovation meets dedication. Our journey started with a simple idea – to create products and services that make life easier and better.</p>
+
+            <div class="team">
+                <h2>Associated with Aspire Group of Colleges   </h2>
+                <h3>Lead By Rana M.Luqman</h3>
+                <p>At our institution, we are guided by the visionary leadership of Rana Luqman, whose commitment to excellence and innovation has shaped our core values. With a deep passion for education and a focus on nurturing talent, Rana Luqman has consistently driven initiatives that foster academic growth, holistic development, and creative thinking. His leadership ensures that we not only equip our students with the knowledge and skills they need for the future but also inspire them to become compassionate, forward-thinking leaders in their respective fields. Under his guidance, our institution continues to thrive as a hub of learning and innovation.</p>
+                <!-- <p>Our team is made up of passionate, experienced, and dedicated professionals who strive to deliver the best results for our clients.</p> -->
+            </div>
+
+            <div class="mission-vision">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to deliver high-quality solutions tailored to meet the needs of our customers, ensuring reliability, efficiency, and innovation every step of the way.</p>
+                </div>
+                <div class="vision">
+                    <h2>Our Vision</h2>
+                    <p>We envision a world where technology is seamlessly integrated into everyday life, driving growth and enabling success for businesses and individuals alike.</p>
+                </div>
+            </div>
+
+            <div class="values">
+                <h2>Our Core Values</h2>
+                <ul>
+                    <li>Innovation: Pushing the boundaries of technology.</li>
+                    <li>Integrity: Upholding honesty and trust in everything we do.</li>
+                    <li>Customer-Centricity: Always focusing on customer needs.</li>
+                    <li>Teamwork: Achieving success through collaboration.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+     <!-- <section>
         <h2>Inspire Schools Associated with Aspire Group of Colleges </h2>
         <p>Our school aim for providing excellent education to students.</p>
         <p>Our Head Of School is Rana M.Luqman associated with Aspire Group of Colleges.</p>
         <img src="/images/school.jpeg" alt="History Image">
-    </section>
+    </section> -->
     <footer>
-        <p>&copy; 2024 Our School. All Rights Reserved.</p>
+        <p>&copy; 2024 Inspire College. All Rights Reserved.</p>
     </footer>
-</body>
+</body>  
 </html>
