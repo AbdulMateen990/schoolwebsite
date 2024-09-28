@@ -1,12 +1,14 @@
 const express = require('express');
-const app = express();
 const path = require('path');
+
+const app = express();
 
 // Set EJS as the template engine
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../views')); // Point to the views directory
 
 // Serve static files from the "public" folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Define routes
 app.get('/', (req, res) => {
@@ -21,8 +23,5 @@ app.get('/contact', (req, res) => {
   res.render('contact', { title: 'Contact Us' });
 });
 
-// Set the server to listen on port 3000
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+// Export the express app
+module.exports = app;
